@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/left"
+            android:id="@+id/back">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="italic"
+            android:text="Thông tin sách"
+            android:textSize="25dp"
+            android:textColor="#D65681"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/purple_200">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tác Giả :"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TacGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/Tv1"
+                android:text="Tac gia"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Gia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tv1"
+                android:text="Gia">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tv1"
+                android:layout_toRightOf="@+id/Gia"
+                android:text="đ">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/DanhGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Gia"
+                android:text="3.6"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@id/Gia"
+                android:layout_toRightOf="@+id/DanhGia"
+                android:src="@drawable/star">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/Tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DanhGia"
+                android:text="Mô Tả :"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/MoTa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tv2"
+                android:text="abc">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/LuotDG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lượt đánh giá">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TheLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/SLTrang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trang">
+
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Xếp hạng đánh giá"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/Rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RatingBar>
+
+        <Button
+            android:id="@+id/GuiDG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/Rb"
+            android:text="Gửi đánh giá"
+            android:textSize="14dp">
+
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>
