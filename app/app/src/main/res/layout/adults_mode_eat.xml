@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".modeeat.Adults"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Theo Hội đồng Nâng cao Sức khỏe (Health Promotion Board), một chế độ dinh dưỡng phù hợp với người trưởng thành phải tuân theo những nguyên tắc sau:"
+        android:textSize="20dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Giàu chất xơ"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Ít chất béo"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Ít choresterol"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Ít đường"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Ít muối (không nên ăn mặn)"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+</LinearLayout>

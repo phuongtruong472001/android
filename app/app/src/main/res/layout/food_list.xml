@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mainlayout.ListFood"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:background="#B6E6E6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="Chất đạm"
+            android:textColorHint="@color/black"
+            android:id="@+id/tvChatDam"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            ></TextView>
+        <TextView
+            android:background="#B6E6E6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="Chất béo"
+            android:textColorHint="@color/black"
+            android:id="@+id/tvChatBeo"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_weight="4"
+            android:background="#B6E6E6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="Chất bột đường"
+            android:textColorHint="@color/black"
+            android:id="@+id/tvChatBotDuong"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            ></TextView>
+
+        <TextView
+            android:background="#B6E6E6"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="Vitamin- Khoáng chất"
+            android:textColorHint="@color/black"
+            android:id="@+id/tvVtmKc"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            ></TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+
+        android:id="@+id/RecycleviewFood"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add"
+            android:layout_marginRight="50dp"
+            android:id="@+id/addFood"
+            android:layout_marginTop="20dp"></ImageView>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

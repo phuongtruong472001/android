@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="10"
+    android:layout_margin="10dp">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Bạn bị gầy mất rồi,phải tăng cân cho đẹp thôi"></TextView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:src="@drawable/thin"
+        android:layout_margin="20dp"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:text="Bạn cần : tăng cường bổ sung thực phẩm có chất chống oxy hóa, ăn đủ 3 bữa chính và bổ sung các bữa phụ .Bên cạnh đó bạn cần phải tập thể dục thường xuyên và điều độ ."
+        ></TextView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:src="@drawable/supporter"></ImageView>
+
+</LinearLayout>

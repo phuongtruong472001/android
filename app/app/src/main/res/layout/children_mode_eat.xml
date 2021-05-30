@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đối với trẻ sơ sinh (Độ tuổi 2)"
+        android:textSize="20dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đối với trẻ nhỏ hơn 6 tháng tuổi,chúng ta chưa nên cho bé ăn dặm vì hệ tiêu hóa còn yếu,sau 6 tháng bắt đầu cho ăn dặm và 9 tháng cho ăn đồ cứng,ăn đủ chất bảo đảm sự phát triển khỏe mạnh"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đối với trẻ từ 2 đến 15 tuổi"
+        android:textSize="20dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Độ tuổi này bé cần cung cấp đầy đủ chất dinh dưỡng để phát triển khỏe mạnh,mẹ cần bổ sung những chất dinh dưỡng thiết yếu và ngăn chứng biếng ăn của bé, cho bé tập thể dục đều đặn"
+        ></TextView>
+</LinearLayout>

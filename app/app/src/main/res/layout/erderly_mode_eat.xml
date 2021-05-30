@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".modeeat.Erderly"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="  Với người già, nguy cơ bệnh tim mạch, đái tháo đường, máu nhiễm mỡ... rất cao nên cần quan tâm nhiều hơn trong chế độ ăn uống, sinh hoạt"
+        android:textSize="20dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Dùng món luộc thay nướng."
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Giảm lượng thịt và thay bằng cá."
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Nên chọn các thức ăn có nguồn gốc thực vật."
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Thêm mỡ giảm đường."
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+
+
+</LinearLayout>

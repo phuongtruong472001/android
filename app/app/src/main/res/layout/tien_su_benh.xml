@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Bạn vui lòng chọn căn bệnh bạn mắc phải"
+        android:textSize="20dp"></TextView>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratioGoup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bệnh tim mạch"
+            android:id="@+id/benhTimMach">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bệnh tiểu đường"
+            android:id="@+id/benhTieuDuong">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bệnh huyết áp cao"
+            android:id="@+id/benhHuyetApCao">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bệnh huyết áp thấp"
+            android:id="@+id/benhHuyetApThap">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bệnh máu nhiễm mỡ"
+            android:id="@+id/benhMauNhiemMo">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bệnh gout"
+            android:id="@+id/benhGout">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bệnh viêm dạ dày"
+            android:id="@+id/benhViemDaDay">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tôi không có bệnh"
+            android:id="@+id/khongBenh">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Submit"></Button>
+</LinearLayout>
