@@ -2,8 +2,6 @@ package com.example.app.mainlayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,37 +23,27 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.app.R;
-import com.example.app.food.ChatBeo;
-import com.example.app.food.ChatBotduong;
-import com.example.app.food.ChatDam;
+import com.example.app.food.AddFood;
 import com.example.app.food.Food;
 import com.example.app.food.FoodAdapter;
 import com.example.app.food.IOnClickMenuItem;
 import com.example.app.food.MainFood;
-import com.example.app.food.VitaminKC;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.Console;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ListFood extends AppCompatActivity {
-    private static final String URL = "https://haui-api-food.herokuapp.com/api/food";
+    private static final String URL = "https://haui-hit-food.herokuapp.com/api/food";
     RecyclerView reImageFood;
     JSONArray jsonArray;
     SearchView searchView;
     List<Food> listFood=new ArrayList<>();
     FoodAdapter foodAdapter;
     TextView tvChatBeo, tvChatDam, tvVtmKc, tvChatBotDuong;
-    List<Food> listChatDam=new ArrayList<>();
-    List<Food> listChatBeo=new ArrayList<>();
-    List <Food> listChatBotDuong=new ArrayList<>();
-    List <Food> listVitaminKC=new ArrayList<>();
     ImageView addFood;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -122,53 +110,12 @@ public class ListFood extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        for (Food food:listFood)
-        {
-            if(food.getNutrition().toLowerCase().contains("béo"))
-                listChatBeo.add(food);
-            else if(food.getNutrition().toLowerCase().contains("đạm"))
-                listChatDam.add(food);
-            else if(food.getNutrition().toLowerCase().contains("đường"))
-                listChatBotDuong.add(food);
-            else if(food.getNutrition().toLowerCase().contains("vitamin"))
-                listVitaminKC.add(food);
-        }
-        tvChatBeo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(ListFood.this, ChatBeo.class);
-                intent.putParcelableArrayListExtra("listChatBeo", (ArrayList<? extends Parcelable>) listChatBeo);
-                startActivity(intent);
-            }
-        });
-        tvChatBotDuong.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(ListFood.this, ChatBotduong.class);
-                intent.putParcelableArrayListExtra("listChatBotDuong", (ArrayList<? extends Parcelable>) listChatBotDuong);
-                startActivity(intent);
-            }
-        });
-        tvChatDam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(ListFood.this, ChatDam.class);
-                intent.putParcelableArrayListExtra("listChatDam", (ArrayList<? extends Parcelable>) listChatDam);
-                startActivity(intent);
-            }
-        });
-        tvVtmKc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(ListFood.this, VitaminKC.class);
-                intent.putParcelableArrayListExtra("listVitaminKC", (ArrayList<? extends Parcelable>) listVitaminKC);
-                startActivity(intent);
-            }
-        });
+
+
         addFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(ListFood.this, VitaminKC.class);
+                Intent intent=new Intent(ListFood.this, AddFood.class);
 
                 startActivity(intent);
             }
@@ -199,10 +146,7 @@ public class ListFood extends AppCompatActivity {
         return true;
     }
     void AnhXa(){
-        tvChatBeo=findViewById(R.id.tvChatBeo);
-        tvChatDam=findViewById(R.id.tvChatDam);
-        tvVtmKc=findViewById(R.id.tvVtmKc);
-        tvChatBotDuong=findViewById(R.id.tvChatBotDuong);
+
         addFood=findViewById(R.id.addFood);
     }
     @Override
@@ -218,4 +162,5 @@ public class ListFood extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

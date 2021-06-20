@@ -5,151 +5,162 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".login.SignUp"
     android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:text="Please enter your information !"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#E43A84"></TextView>
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:text="Please enter your information !"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#E43A84"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-        <EditText
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="name"
-            android:id="@+id/edtName"></EditText>
-        <EditText
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="surname"
-            android:id="@+id/edtSurname"></EditText>
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="name"></EditText>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2">
-        <TextView
-            android:layout_margin="5dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:text="Age :"
-            android:textSize="20dp"
-            ></TextView>
-        <EditText
-            android:layout_margin="5dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="age"
-            android:id="@+id/edtAge"></EditText>
+                <EditText
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="surname"
+                    android:id="@+id/edtSurname"></EditText>
+            </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Age :"
+                    android:textSize="20dp"
+                    ></TextView>
+                <EditText
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="age"
+                    android:id="@+id/edtAge"></EditText>
 
-        <TextView
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Username :"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            ></TextView>
-        <EditText
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:layout_marginLeft="30dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="username"
-            android:id="@+id/edtUsername"></EditText>
-    </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Username :"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    ></TextView>
+                <EditText
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="username"
+                    android:id="@+id/edtUsername"></EditText>
+            </LinearLayout>
 
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
 
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Password :"
-            android:textStyle="bold"
-            android:layout_margin="5dp"
-            android:textSize="20dp"
-            ></TextView>
-        <EditText
-            android:lines="1"
-            android:layout_weight="1"
-            android:layout_marginLeft="30dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="password"
-            android:password="true"
-            android:layout_margin="5dp"
-            android:id="@+id/edtPassword">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password :"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    ></TextView>
+                <EditText
+                    android:lines="1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="password"
+                    android:password="true"
+                    android:layout_margin="5dp"
+                    android:id="@+id/edtPassword">
 
-        </EditText>
-    </LinearLayout>
+                </EditText>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        >
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Confirm Password :"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:layout_margin="5dp"
-            ></TextView>
-        <EditText
-            android:lines="1"
-            android:layout_weight="1"
-            android:layout_margin="5dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="password"
-            android:password="true"
-            android:id="@+id/edtConFirmPassword">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Password :"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    ></TextView>
+                <EditText
+                    android:lines="1"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="password"
+                    android:password="true"
+                    android:id="@+id/edtConFirmPassword">
 
-        </EditText>
-    </LinearLayout>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign up"
-        android:id="@+id/btnSignUp1"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="50dp"
-        ></Button>
+                </EditText>
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:id="@+id/btnSignUp1"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/fix_button"
+                ></Button>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

@@ -3,12 +3,17 @@
     package="com.example.app">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
+
         android:theme="@style/Theme.App">
         <activity android:name=".login.MainActivity">
             <intent-filter>
@@ -17,30 +22,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".mainlayout.Welcome">
 
-
         </activity>
+
         <activity android:name=".mainlayout.Introduce">
-
-
         </activity>
+
         <activity android:name=".login.SignUp">
-
-
         </activity>
+
         <activity android:name=".mainlayout.ListFood">
-
-
         </activity>
+
         <activity android:name=".food.MainFood">
-
-
         </activity>
+
         <activity android:name=".mainlayout.ModeEat">
-
-
         </activity>
+
         <activity android:name=".mainlayout.TowerDD">
 
 
@@ -54,22 +55,6 @@
 
         </activity>
         <activity android:name=".modeeat.LuaChonBenh">
-
-
-        </activity>
-        <activity android:name=".food.ChatBeo">
-
-
-        </activity>
-        <activity android:name=".food.ChatBotduong">
-
-
-        </activity>
-        <activity android:name=".food.VitaminKC">
-
-
-        </activity>
-        <activity android:name=".food.ChatDam">
 
 
         </activity>
@@ -101,6 +86,9 @@
 
         </activity>
         <activity android:name=".modeeat.bmi.Thin">
+
+        </activity>
+        <activity android:name=".food.AddFood">
 
         </activity>
 

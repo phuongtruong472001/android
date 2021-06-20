@@ -6,52 +6,94 @@
     android:orientation="vertical"
     tools:context=".mainlayout.Introduce"
     android:layout_margin="20dp">
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Giới Thiệu về ứng dụng :"
-        android:textSize="30dp"
-        android:textStyle="bold"></TextView>
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ứng dụng này cung cấp chp người dùng tra  "
-        android:textColor="#65A5EA"
-        android:layout_marginLeft="50dp"></TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#65A5EA"
-        android:text="cứu món ăn theo cách thức nấu ăn,tên món ăn,tra cứu chỉ số BMI,tham khảo chế độ
-dinh dưỡng phù hợp với bản thân,các món ăn giàu chất dĩnh dưỡng hay
-kiêng kị đối với nhóm người có tiền sử bệnh.Thêm vào đó người dùng còn có thể
-đăng bài chia sẻ công thức nấu ăn mình nghiên cứu được cho các người dùng khác
-cùng tham khảo.Ngoài ra còn biết thêm về chế độ ăn hợp lý theo tháp dĩnh dưỡng.
-Vậy CHẾ ĐỘ ĂN THEO THÁP DĨNH DƯỠNG LÀ GÌ ?"
-        android:layout_marginLeft="5dp"
-        ></TextView>
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Chế độ ăn hợp lý theo tháp dĩnh dưỡng là :"
-        android:textSize="20dp"
-        android:textStyle="bold"></TextView>
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#65A5EA"
-        android:text="Tháp dinh dưỡng sẽ luôn bao gồm 6 nhóm "
-        android:layout_marginLeft="50dp"></TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#65A5EA"
-        android:layout_marginLeft="5dp"
-        android:text="thực phẩm chính: rau xanh và trái cây, sữa, thịt, đậu và các loại hạt, thực phẩm từ chất béo và tinh bột, đường. Tùy theo từng độ tuổi,mỗi người sẽ có những nhu cầu dinh dưỡng tương ứng"
-        ></TextView>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giới thiệu về ứng dụng :"
+                android:textSize="30dp"
+                android:textColor="#82AAE6"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bạn đã chán việc nghĩ xem 'Hôm nay ăn gì??'"
+                android:textColor="#EB0B0A0A"
+                android:layout_marginLeft="5dp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="- Hãy đến với chúng tôi, bạn sẽ có những trải nghiệm mới trong chính căn bếp của mình."
+                android:layout_marginLeft="15dp"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="- Chúng tôi sẽ đem đến cho bạn công thức cho những món ngon đầy đủ dinh dưỡng."
+                android:layout_marginLeft="15dp"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="- Bên cạnh đó, chúng tôi còn gửi đến bạn những 'lời khuyên' và chế độ ăn phù hợp với tình trạng sức khỏe, cơ thể của bạn ."
+                android:layout_marginLeft="15dp"
+                ></TextView>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chế độ ăn hợp lý theo tháp dĩnh dưỡng là :"
+                android:textSize="25dp"
+                android:textColor="#82AAE6"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:text="-Tháp dinh dưỡng bao gồm 6 nhóm thực phẩm chính: rau xanh và trái cây, sữa, thịt, đậu và các loại hạt, thực phẩm từ chất béo và tinh bột, đường."
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:text="-Tùy theo từng độ tuổi, tình trạng sức khỏe mà mỗi người sẽ có những nhu cầu dinh dưỡng tương ứng."
+                ></TextView>
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chúc các bạn sớm tìm được căn bếp cho riêng mình-tìm được người muốn cùng nhau 'Thu ăn măng trúc, đông ăn giá'."
+                android:textSize="20dp"
+                android:textColor="#4DD552"
+                android:textStyle="italic"></TextView>
+        </LinearLayout>
+    </ScrollView>
+
 
 
 </LinearLayout>

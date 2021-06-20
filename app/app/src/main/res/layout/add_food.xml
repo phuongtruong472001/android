@@ -4,138 +4,160 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent">
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Vui lòng nhập thông tin món ăn "
-            android:textSize="20dp"
-            android:textStyle="italic"></TextView>
-    </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="3">
-        <TextView
-            android:layout_margin="5dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:text="Tên món ăn :"
-            android:textSize="20dp"
-            ></TextView>
-        <EditText
-            android:layout_margin="5dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:hint="tên món"
-            android:id="@+id/edtTenMon"></EditText>
-
-    </LinearLayout>
-
-        <TextView
-            android:layout_margin="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nguyên Liệu :"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            ></TextView>
-
-
-    <EditText
-        android:id="@+id/edtNguyenLieu"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_marginLeft="30dp"
-        android:hint="nguyên liệu"></EditText>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        >
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Chất dinh dưỡng :"
-            android:textStyle="bold"
-            android:layout_margin="5dp"
-            android:textSize="20dp"
-            ></TextView>
-        <EditText
-            android:lines="1"
-            android:layout_weight="2"
-            android:layout_marginLeft="30dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="chất dinh dưỡng"
-            android:password="true"
-            android:layout_margin="5dp"
-            android:id="@+id/edtChatDD">
-
-        </EditText>
-    </LinearLayout>
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cách làm :"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:layout_margin="5dp"
-            ></TextView>
-        <EditText
-
-            android:layout_margin="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="cách làm"
-            android:password="true"
-            android:id="@+id/edtCachLam">
-
-        </EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chọn ảnh :"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_margin="5dp"></TextView>
-        <RelativeLayout
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_centerInParent="true"
-                android:src="@drawable/camera"
-                android:id="@+id/uploatImg"
-                ></ImageView>
-        </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Upload"
-            android:layout_marginTop="30dp"
-            android:id="@+id/btnUpload"></Button>
-    </RelativeLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Vui lòng nhập thông tin món ăn "
+                    android:textSize="20dp"
+                    android:textStyle="italic"></TextView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Tên món ăn :"
+                    android:textSize="20dp"
+                    ></TextView>
+                <EditText
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="tên món"
+                    android:id="@+id/edtTenMon"></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyên Liệu :"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                ></TextView>
+
+
+            <EditText
+                android:id="@+id/edtNguyenLieu"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="30dp"
+                android:hint="nguyên liệu"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Chất dinh dưỡng :"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    ></TextView>
+                <EditText
+                    android:lines="1"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="chất dinh dưỡng"
+
+                    android:layout_margin="5dp"
+                    android:id="@+id/edtChatDD">
+
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cách làm :"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                ></TextView>
+            <EditText
+
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="cách làm"
+
+                android:id="@+id/edtCachLam">
+
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn ảnh :"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="5dp"></TextView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/selectImg"
+                    android:layout_width="120dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="120dp"
+                    android:src="@drawable/camera"></ImageView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Select Image"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/btnSelectImg"></Button>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Upload"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/btnUpload"></Button>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

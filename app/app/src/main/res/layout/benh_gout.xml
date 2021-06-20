@@ -27,13 +27,13 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="5dp"
-                android:text="chế độ ăn uống góp phần điều trị cho bệnh Gout và các bệnh kèm theo (cao huyết áp, đái tháo đường, rối loạn lipid máu…) chứ không thể thay được thuốc. Thực hiện tốt chế độ ăn uống có thể giảm bớt số lượng thuốc, số loại thuốc cần dùng, giảm bớt các hậu quả xấu của bệnh."
+                android:text="Chế độ ăn uống góp phần điều trị cho bệnh Gout và các bệnh kèm theo (cao huyết áp, đái tháo đường, rối loạn lipid máu…) chứ không thể thay được thuốc. Thực hiện tốt chế độ ăn uống có thể giảm bớt số lượng thuốc, số loại thuốc cần dùng, giảm bớt các hậu quả xấu của bệnh."
                 android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
                 android:textStyle="bold"
                 android:text="Người mắc bệnh gout nên ăn những thực phẩm sau:"/>
