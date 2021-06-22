@@ -13,17 +13,21 @@
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:supportsRtl="true"
-
         android:theme="@style/Theme.App">
-        <activity android:name=".login.MainActivity">
+        <activity android:name=".mainlayout.Logo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".login.MainActivity">
 
-        <activity android:name=".mainlayout.Welcome">
+        </activity>
+
+        <activity
+            android:name=".mainlayout.Welcome"
+            >
 
         </activity>
 

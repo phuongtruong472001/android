@@ -4,9 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +23,7 @@ import com.example.app.modeeat.sick.ViemDaDay;
 
 public class LuaChonBenh extends AppCompatActivity {
 
-    Button submit;
+    RelativeLayout submit;
     RadioGroup radioGroup;
     RadioButton benh,benhTimMach,benhTieuDuong,benhHuyetApCao,benhHuyetApThap,benhMauNhiemMo,benhGout,benhViemDaDay,khongBenh;
     @Override
@@ -31,6 +31,7 @@ public class LuaChonBenh extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tien_su_benh);
         AnhXa();
+        getSupportActionBar().setTitle("Người có tiền sử mắc bệnh ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

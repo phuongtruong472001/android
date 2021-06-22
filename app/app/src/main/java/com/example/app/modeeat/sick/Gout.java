@@ -13,6 +13,7 @@ public class Gout extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.benh_gout);
+        getSupportActionBar().setTitle("Bệnh gout ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public boolean onOptionsItemSelected(MenuItem item) {

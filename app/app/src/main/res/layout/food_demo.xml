@@ -4,8 +4,9 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="16dp"
-    android:background="#83BAC8"
-    android:layout_marginBottom="10dp">
+    android:background="@drawable/circle"
+    android:layout_margin="10dp"
+   >
 
     <ImageView
         android:id="@+id/img_menu_book"

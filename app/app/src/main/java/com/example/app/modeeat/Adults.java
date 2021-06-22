@@ -13,6 +13,7 @@ public class Adults extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.adults_mode_eat);
+        getSupportActionBar().setTitle("Người trưởng thành ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     @Override

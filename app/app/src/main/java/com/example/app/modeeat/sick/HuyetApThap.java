@@ -13,6 +13,7 @@ public class HuyetApThap extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.benh_huyet_ap_thap);
+        getSupportActionBar().setTitle("Bệnh huyết áp thấp ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public boolean onOptionsItemSelected(MenuItem item) {

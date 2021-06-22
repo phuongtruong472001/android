@@ -22,7 +22,13 @@ public class ModeEat extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mode_eat);
+        getSupportActionBar().setTitle("Chế độ ăn ");
+//        Spannable text = new SpannableString(actionBar.getTitle());
+//        text.setSpan(new ForegroundColorSpan(Color.BLUE), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+//        actionBar.setTitle(text);
+
         AnhXa();
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         imgChildren.setOnClickListener(new View.OnClickListener() {
             @Override

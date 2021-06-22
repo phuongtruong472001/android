@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f2f2f2"
     >
     <ScrollView
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
                 android:text="Bạn đang tìm hiểu chế độ ăn hợp lý cho người mắc bệnh tìm mạch?"
                 android:textSize="25dp"
                 android:textStyle="bold"
+
                 android:layout_margin="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -26,6 +28,7 @@
                 android:text="Đối với những người mắc bệnh tim mạch, chế độ ăn uống là một trong những vấn đề cần được lưu tâm bởi nó là “chìa khóa” để phòng chống bệnh tim mạch."
                 android:textSize="18dp"
                 android:layout_marginTop="20dp"
+                android:textColor="#000"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"/>
 

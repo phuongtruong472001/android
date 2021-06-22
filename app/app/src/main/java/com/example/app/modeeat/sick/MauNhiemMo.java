@@ -13,6 +13,7 @@ public class MauNhiemMo extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.benh_mau_nhiem_mo);
+        getSupportActionBar().setTitle("Bệnh máu nhiễm mỡ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public boolean onOptionsItemSelected(MenuItem item) {

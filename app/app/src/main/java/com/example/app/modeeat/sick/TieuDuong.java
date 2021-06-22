@@ -13,6 +13,7 @@ public class TieuDuong extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.benh_tieu_duong);
+        getSupportActionBar().setTitle("Bệnh tiểu đường ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public boolean onOptionsItemSelected(MenuItem item) {

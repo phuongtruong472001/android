@@ -13,6 +13,7 @@ public class Chidren extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.children_mode_eat);
+        getSupportActionBar().setTitle("Trẻ em ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     @Override

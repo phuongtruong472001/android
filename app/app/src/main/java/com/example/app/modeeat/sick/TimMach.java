@@ -13,6 +13,7 @@ public class TimMach extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.benh_tim_mach);
+        getSupportActionBar().setTitle("Bệnh tim mạch ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public boolean onOptionsItemSelected(MenuItem item) {

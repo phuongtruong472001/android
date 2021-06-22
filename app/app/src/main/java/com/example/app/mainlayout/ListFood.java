@@ -49,6 +49,7 @@ public class ListFood extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.food_list);
+        getSupportActionBar().setTitle("Món ăn ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         AnhXa();
         reImageFood=findViewById(R.id.RecycleviewFood);

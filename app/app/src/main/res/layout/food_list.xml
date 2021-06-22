@@ -5,34 +5,30 @@
     tools:context=".mainlayout.ListFood"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#f2f2f2"
     android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Food"
-            android:textStyle="italic"
-            android:textSize="20dp"
-            android:layout_centerInParent="true"
-            ></TextView>
-    </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-
+        android:layout_height="550dp"
+        android:layout_margin="10dp"
         android:id="@+id/RecycleviewFood"
-        ></androidx.recyclerview.widget.RecyclerView>
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
     <RelativeLayout
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
             android:layout_alignParentRight="true"
-            android:src="@drawable/add"
             android:layout_marginRight="50dp"
+            android:src="@drawable/add"
+            android:layout_centerVertical="true"
+
             android:id="@+id/addFood"
             android:layout_marginTop="20dp"></ImageView>
     </RelativeLayout>

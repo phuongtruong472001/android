@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.app.R;
 import com.example.app.modeeat.Adults;
-import com.example.app.modeeat.Chidren;
 import com.example.app.modeeat.bmi.Fat;
 import com.example.app.modeeat.bmi.Thin;
 
@@ -29,6 +28,7 @@ public class TowerDD extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tower_dd);
         AnhXa();
+        getSupportActionBar().setTitle("Tháp dinh dưỡng ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
        btnSubmit.setOnClickListener(new View.OnClickListener() {
            @Override

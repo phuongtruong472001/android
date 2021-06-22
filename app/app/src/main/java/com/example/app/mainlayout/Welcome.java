@@ -17,6 +17,7 @@ public class Welcome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
         AnhXa();
+        getSupportActionBar().hide();
         imgIntroduce.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

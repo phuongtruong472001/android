@@ -15,8 +15,7 @@ public class Introduce extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.introduce);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
+        getSupportActionBar().setTitle("Thông tin ứng dụng ");
 
     }
 

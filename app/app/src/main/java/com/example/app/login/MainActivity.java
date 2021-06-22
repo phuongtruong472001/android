@@ -18,6 +18,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.app.R;
 import com.example.app.mainlayout.Welcome;
+import com.google.android.material.textfield.TextInputEditText;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,7 +29,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     static final String SHARE_PRE_NAME = "Person";
-    EditText edtUsername,edtPassword;
+    TextInputEditText edtUsername;
+    EditText edtPassword;
     Button btnSignUp,btnSignIn;
     CheckBox cbSave;
     SQLHelper sqlHelper;
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         AnhXa();
         sqlHelper = new SQLHelper(this);
        // getListPerson();
-
+        getSupportActionBar().hide();
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

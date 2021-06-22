@@ -13,6 +13,7 @@ public class Erderly extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.erderly_mode_eat);
+        getSupportActionBar().setTitle("Người già ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     @Override
