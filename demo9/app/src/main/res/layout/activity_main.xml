@@ -19,9 +19,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textStyle="italic"
-            android:text="Thông tin sách"
+            android:text="Thông tin chi tiết sách"
             android:textSize="25dp"
-            android:textColor="#D65681"></TextView>
+            android:textColor="#AF365F"></TextView>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
